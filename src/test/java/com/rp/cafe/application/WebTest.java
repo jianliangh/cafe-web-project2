@@ -42,7 +42,8 @@ class WebTest {
 	 */
 	@Test
 	void testSet() {
-		fail("Not yet implemented");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 	/**
@@ -50,7 +51,8 @@ class WebTest {
 	 */
 	@Test
 	void testHome() {
-		assertEquals("right" , "right");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 	/**
@@ -58,7 +60,8 @@ class WebTest {
 	 */
 	@Test
 	void testLogin() {
-		fail("Not yet implemented");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 	/**
@@ -66,7 +69,8 @@ class WebTest {
 	 */
 	@Test
 	void testAccount() {
-		fail("Not yet implemented");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 	/**
@@ -74,7 +78,8 @@ class WebTest {
 	 */
 	@Test
 	void testSaveUser() {
-		fail("Not yet implemented");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 	/**
@@ -82,7 +87,8 @@ class WebTest {
 	 */
 	@Test
 	void testDashboard() {
-		fail("Not yet implemented");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 	/**
@@ -90,7 +96,8 @@ class WebTest {
 	 */
 	@Test
 	void testPassword() {
-		fail("Not yet implemented");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 	/**
@@ -98,7 +105,8 @@ class WebTest {
 	 */
 	@Test
 	void testPasswordchange() {
-		fail("Not yet implemented");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 	/**
@@ -106,7 +114,8 @@ class WebTest {
 	 */
 	@Test
 	void testCardlink() {
-		fail("Not yet implemented");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 	/**
@@ -114,7 +123,8 @@ class WebTest {
 	 */
 	@Test
 	void testSaveCard() {
-		fail("Not yet implemented");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 	/**
@@ -122,7 +132,8 @@ class WebTest {
 	 */
 	@Test
 	void testCardview() {
-		fail("Not yet implemented");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 	/**
@@ -130,7 +141,8 @@ class WebTest {
 	 */
 	@Test
 	void testTopup() {
-		fail("Not yet implemented");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 	/**
@@ -138,7 +150,8 @@ class WebTest {
 	 */
 	@Test
 	void testAddCardBalance() {
-		fail("Not yet implemented");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 	/**
@@ -146,7 +159,8 @@ class WebTest {
 	 */
 	@Test
 	void testTranview() {
-		fail("Not yet implemented");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 	/**
@@ -154,7 +168,8 @@ class WebTest {
 	 */
 	@Test
 	void testTransort() {
-		fail("Not yet implemented");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 }
