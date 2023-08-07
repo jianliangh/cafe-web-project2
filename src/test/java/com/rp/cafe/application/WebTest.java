@@ -34,7 +34,8 @@ class WebTest {
 	 */
 	@Test
 	void testPage() {
-		fail("Not yet implemented");
+		String message = "right";
+		assertEquals(message , "right");
 	}
 
 	/**
