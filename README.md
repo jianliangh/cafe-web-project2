@@ -1,4 +1,4 @@
-## Coursework 1 Repository
+## Coursework Final Repository
 ---
 This project is about ABC Café Online Kiosk enhanced features which are total transaction time, sort button, and card UI are handled by 3 team members. 
 

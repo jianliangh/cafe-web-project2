@@ -66,12 +66,8 @@
 			enctype="multipart/form-data">
 
 			<th:block th:each="roles : ${roles}">
-				<!--  <input type="hidden" name="roles" th:if="${roles.id} == 1" th:field="${roles.id}" required /> -->
-
 				<input type="hidden" name="roles" th:if="${roles.id} == 1"
 					th:value="${roles.id}" />
-				<!-- <p th:if="${roles.id} == 1" th:text="${roles.id} + ' : ' + ${roles.name}"></p>  -->
-
 			</th:block>
 
 			<h2>ABC Cafe Online Kiosk Account Creation</h2>

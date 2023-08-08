@@ -170,7 +170,7 @@ public class AccountController {
 			user.setPassword(passwordEncoder.encode(user.getPassword()));
 
 			// save user object into user table.
-			Users savedUser = repo.save(user);
+			repo.save(user);
 
 			// set the feedback message
 			session.setAttribute("message", user.getUsername() + " is created in the system.");
@@ -183,8 +183,6 @@ public class AccountController {
 					"Username: " + user.getUsername() + " is existed in the system. Please try it again");
 
 		}
-
-		System.out.println("This is user save page");
 		
 		// return reload templates/account.html
 		return new RedirectView("/account", true);
@@ -218,8 +216,6 @@ public class AccountController {
 		// set home tab in active and set "ABC Cafe" in web page title
 		page(model, "dashboard", "ABC Cafe Online Kiosk Dashboard");
 
-		System.out.println("This is Dashboard page");
-
 		// return templates/dashboard.html
 		return "dashboard";
 	}
@@ -233,8 +229,6 @@ public class AccountController {
 
 		// set home tab in active and set "ABC Cafe" in web page title
 		page(model, "password", "ABC Cafe Online Kiosk Change Password");
-
-		System.out.println("This is Change Password page");
 
 		// return templates/user/password.html
 		return "user/password";
@@ -254,8 +248,6 @@ public class AccountController {
 
 		// set home tab in active and set "ABC Cafe" in web page title
 		page(model, "password", "ABC Cafe Online Kiosk Change Password");
-
-		System.out.println("This is Change Password page");
 
 		// return templates/user/password.html
 		return "user/password";
@@ -295,8 +287,6 @@ public class AccountController {
 		// set user id into the create user form
 		model.addAttribute("userid", session.getAttribute("id"));
 
-		System.out.println("This is link bank card page");
-
 		// return templates/card/link.html
 		return "card/link";
 	}
@@ -309,7 +299,7 @@ public class AccountController {
 			card.setCardbalance(BigDecimal.ZERO);
 
 			// save user object into user table.
-			Card savedCard = cardrepo.save(card);
+			cardrepo.save(card);
 
 			session.setAttribute("message", "You have linked your bank card.");
 
@@ -317,8 +307,6 @@ public class AccountController {
 			session.setAttribute("card", card);
 			session.setAttribute("message", "Card Number must be 16 numbers and CVV must be 3 numbers.");
 		}
-
-		System.out.println("This is card save page");
 		
 		// return reload templates/card/link.html
 		return new RedirectView("/card/link", true);
@@ -345,8 +333,6 @@ public class AccountController {
 
 		// set home tab in active and set "ABC Cafe" in web page title
 		page(model, "", "ABC Cafe Online Kiosk Bank Card");
-
-		System.out.println("This is view bank card page");
 
 		// return templates/card/view.html
 		return "card/view";
@@ -383,8 +369,6 @@ public class AccountController {
 
 		// set feedback message
 		model.addAttribute("message", "");
-
-		System.out.println("This is top up transaction page");
 
 		// return templates/transaction/topup.html
 		return "transaction/topup";
@@ -430,8 +414,6 @@ public class AccountController {
 		// set feedback message
 		model.addAttribute("message", "You have top up $" + balance + " to your account.");
 
-		System.out.println("This is top up transaction page 2");
-
 		// return templates/transaction/topup.html
 		return "transaction/topup";
 	}
@@ -457,8 +439,6 @@ public class AccountController {
 
 		// set home tab in active and set "ABC Cafe" in web page title
 		page(model, "", "ABC Cafe Online Kiosk View Transaction");
-
-		System.out.println("This is view transaction page");
 
 		// return templates/transaction/view.html
 		return "transaction/view";
@@ -496,8 +476,6 @@ public class AccountController {
 
 		// set home tab in active and set "ABC Cafe" in web page title
 		page(model, "", "ABC Cafe Online Kiosk View Transaction");
-
-		System.out.println("This is sort transaction page");
 
 		// return templates/transaction/view.html
 		return "transaction/view";
