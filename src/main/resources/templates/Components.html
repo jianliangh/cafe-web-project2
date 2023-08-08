@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
-	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
-
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3" lang="en">
+<title></title>
 <body>
 	<div th:fragment="links">
 		<meta charset="ISO-8859-1">
@@ -361,6 +361,7 @@
 
 		<div th:if="${exist} == 1">
 			<table class="table table-success table-striped-columns">
+			<caption>Transactions</caption>
 				<thead>
 					<tr>
 						<th>Tranid</th>
