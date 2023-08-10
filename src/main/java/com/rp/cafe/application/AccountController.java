@@ -111,7 +111,7 @@ public class AccountController {
 		model.addAttribute("tran", tr.count());
 
 		// return templates/Index.html
-		return "Index";
+		return "Index.jsp";
 	}
 
 	// ----------------------------------------------------------------------------
